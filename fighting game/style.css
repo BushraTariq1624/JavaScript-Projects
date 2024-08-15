@@ -16,3 +16,10 @@
     bottom: 20px;
     left: 20px;
 }
+.character2{
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
