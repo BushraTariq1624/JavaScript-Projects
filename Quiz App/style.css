@@ -1,0 +1,14 @@
+body{
+    background-image: url("https://www.buzzfeed.com/static-assets/quizparty/_next/static/images/background-mobile-a7bdcf35e3c6c8344456d08862e339fb.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#container{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    font-size: xx-large;
+}
+.btn{
+    font-size: x-large;
+}
