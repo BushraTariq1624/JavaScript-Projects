@@ -12,3 +12,21 @@ body{
 .btn{
     font-size: x-large;
 }
+.home{
+    position: absolute;
+    left: 320px;
+    top: 80px;
+}
+.bttn{
+    font-size: x-large;
+    position: absolute;
+    left: 160px;
+    top: 390px;
+    color: blueviolet;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+}
+.hidden{
+    display: none;
+}

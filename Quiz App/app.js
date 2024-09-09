@@ -28,7 +28,7 @@ var questions = [
         opt1:"/* This is a comment */",
         opt2:"# This is a comment",
         opt3: "//This is a comment",
-        opt4: "<!-- This is a comment -->",
+        opt4: "!--This is a comment--",
         ans: "//This is a comment"
     },
     {
@@ -43,6 +43,8 @@ var questions = [
 var index = 0
 var result = 0
 function renderQues() {
+    var hide=document.getElementById("hide")
+    hide.className= "hidden"
     var container = document.getElementById("container")
     var option = document.getElementsByName("option")
     for (var i = 0; i < option.length; i++) {
@@ -54,7 +56,9 @@ function renderQues() {
         }
     }
     if (!questions[index]) {
-        container.innerHTML=`<p>Your Quiz Score is ${result} Out of 3</p>`
+        container.innerHTML=`<p>Percentage: ${(result/5)*100} %</p>
+        <p>Total Questions: 5</p>
+        <p>Correct Questions: ${result}</p>`
         return
     }
     container.innerHTML = `
@@ -63,8 +67,8 @@ function renderQues() {
            <label for="opt2"> <input type="radio" name="option" value="${questions[index].opt2}" id="opt2">${questions[index].opt2}</label><br>
             <label for="opt3"><input type="radio" name="option" value="${questions[index].opt3}" id="opt3">${questions[index].opt3}</label><br>
             <label for="opt4"><input type="radio" name="option" value="${questions[index].opt4}" id="opt4">${questions[index].opt4}</label><br>
-            <button class="btn" onclick="renderQues()">Next</button>
+            <button class="btn" id="mybtn" onclick="renderQues()">Next</button>
     `
     index++
 }
-renderQues()
+// renderQues()
