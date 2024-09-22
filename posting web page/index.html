@@ -19,27 +19,27 @@
         </div>
       </nav>
     </div>
-    <div class="container" id="post">
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">User Name</label>
-        <input type="text" class="form-control" id="username"
-          placeholder="Enter Your Name">
+    <div class="app">
+      <div class="container" id="post">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">User Name</label>
+          <input type="text" class="form-control" id="username" placeholder="Enter Your Name">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Your Thoughts</label>
+          <textarea class="form-control" id="text" rows="3"></textarea>
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Your Thoughts</label>
-        <textarea class="form-control" id="text" rows="3"></textarea>
+      <div>
+        <button onclick="post()" type="button" class="color">Add Post</button>
       </div>
+      <div id="cards"></div>
     </div>
-    <div>
-      <button onclick="post()" type="button" class="color">Add Post</button>
-    </div>
-    <div id="cards"></div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
 
-  <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

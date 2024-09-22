@@ -1,5 +1,6 @@
 *{
     font-size: 20px;
+    font-weight: bold;
 }
 .navbar{
     background-color: rgb(156, 224, 236);
@@ -13,11 +14,18 @@
     transform: translateX(500px);
     font-size: larger;
 }
+.form-control{
+    width: 500px;
+}
 .color{
     background-color: rgb(156, 224, 236);
     border: none;
     border-radius: 10px;
     transform: translate(80px,300px);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
 }
 /* .hidden{
     display: none;
@@ -27,6 +35,10 @@
     top: 450px;
     left: 300px;
     width: 500px;
+    border-radius: 10px;
+    border-color: rgb(156, 224, 236);
+    border-width: 5px;
+    border-style:dashed;
 }
 .head{
     background-color: rgb(156, 224, 236);
